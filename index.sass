@@ -1,0 +1,304 @@
+/**
+ * Created by alejandrorioscalera
+ * On 11/10/17
+ *
+ * -- SOCIAL NETWORKS --
+ *
+ * GitHub: https://github.com/clonalejandro or @clonalejandro
+ * Website: https://clonalejandro.me/
+ * Twitter: https://twitter.com/clonalejandro11/ or @clonalejandro11
+ * Keybase: https://keybase.io/clonalejandro/
+ *    
+ * -- LICENSE --
+ *
+ * All rights reserved for clonalejandro ©malextrap 2017 / 2018
+ */
+
+
+/** SMALL CONSTRUCTORS **/
+
+@import "../elements/colors"
+
+
+/** REST **/
+
+.btn
+  position: relative
+  display: inline-block
+  height: 1em
+  margin: 0.5em
+  padding: 0.5em 2em 0.5em 2.25em
+  border-radius: 2em
+  background: $blue
+  color: $pure_white
+  text-decoration: none
+  text-align: left
+  cursor: pointer
+  transition: all cubic-bezier(0.5, 1.75, 0.5, 1) 0.5s
+  transform: scale(1) translate3d(0, 0, 0)
+  transform-style: preserve-3d
+  box-shadow: 0 0.5em 1em $shadow_dark_blue
+
+  &.blue
+    &.animated
+      &:hover, &:focus
+        transform: scale(1.15) translate3d(0, -0.05em, 0)
+        box-shadow: 0 0.5em 1.5em $shadow_light_blue
+  &.cyan
+    padding-left: 2.6em
+    background: $cyan
+    box-shadow: 0 0.5em 1em $shadow_dark_cyan
+    &.animated
+      &:hover, &:focus
+        transform: scale(1.15) translate3d(0, -0.05em, 0)
+        box-shadow: 0 0.5em 1.5em $shadow_light_cyan
+  &.emerald
+    padding-left: 2.6em
+    background: $emerald
+    box-shadow: 0 0.5em 1em $shadow_dark_emerald
+    &.animated
+      &:hover, &:focus
+        transform: scale(1.15) translate3d(0, -0.05em, 0)
+        box-shadow: 0 0.5em 1.5em $shadow_light_emerald
+  &.green
+    padding-left: 2.6em
+    background: $green
+    box-shadow: 0 0.5em 1em $shadow_dark_green
+    &.animated
+      &:hover, &:focus
+        transform: scale(1.15) translate3d(0, -0.05em, 0)
+        box-shadow: 0 0.5em 1.5em $shadow_light_green
+  &.salmon
+    padding-left: 2.6em
+    background: $salmon
+    box-shadow: 0 0.5em 1em $shadow_dark_salmon
+    &.animated
+      &:hover, &:focus
+        transform: scale(1.15) translate3d(0, -0.05em, 0)
+        box-shadow: 0 0.5em 1.5em $shadow_light_salmon
+  &.red
+    padding-left: 2.6em
+    background: $red
+    box-shadow: 0 0.5em 1em $shadow_dark_red
+    &.animated
+      &:hover, &:focus
+        transform: scale(1.15) translate3d(0, -0.05em, 0)
+        box-shadow: 0 0.5em 1.5em $shadow_light_red
+  &.pink
+    padding-left: 2.6em
+    background: $pink
+    box-shadow: 0 0.5em 1em $shadow_dark_pink
+    &.animated
+      &:hover, &:focus
+        transform: scale(1.15) translate3d(0, -0.05em, 0)
+        box-shadow: 0 0.5em 1.5em $shadow_light_pink
+  &.grape
+    padding-left: 2.6em
+    background: $grape
+    box-shadow: 0 0.5em 1em $shadow_dark_grape
+    &.animated
+      &:hover, &:focus
+        transform: scale(1.15) translate3d(0, -0.05em, 0)
+        box-shadow: 0 0.5em 1.5em $shadow_light_grape
+  &.violet
+    padding-left: 2.6em
+    background: $violet
+    box-shadow: 0 0.5em 1em $shadow_dark_violet
+    &.animated
+      &:hover, &:focus
+        transform: scale(1.15) translate3d(0, -0.05em, 0)
+        box-shadow: 0 0.5em 1.5em $shadow_light_violet
+  &.yellow
+    padding-left: 2.6em
+    background: $yellow
+    box-shadow: 0 0.5em 1em $shadow_dark_yellow
+    &.animated
+      &:hover, &:focus
+        transform: scale(1.15) translate3d(0, -0.05em, 0)
+        box-shadow: 0 0.5em 1.5em $shadow_light_yellow
+  &.orange
+    padding-left: 2.6em
+    background: $orange
+    box-shadow: 0 0.5em 1em $shadow_dark_orange
+    &.animated
+      &:hover, &:focus
+        transform: scale(1.15) translate3d(0, -0.05em, 0)
+        box-shadow: 0 0.5em 1.5em $shadow_light_orange
+  &.teal
+    padding-left: 2.6em
+    background: $teal
+    box-shadow: 0 0.5em 1em $shadow_dark_teal
+    &.animated
+      &:hover, &:focus
+        transform: scale(1.15) translate3d(0, -0.05em, 0)
+        box-shadow: 0 0.5em 1.5em $shadow_light_teal
+
+  &.first-gradient
+    padding-left: 2.6em
+    background: inherit
+    background-image: linear-gradient(to right, $fgradients, $fgradiente)
+    transition: all 0.4s ease
+    -webkit-animation: gradient 3s ease infinite
+    -moz-animation: gradient 3s ease infinite
+    animation: gradient 3s ease infinite
+    box-shadow: 0 0.5em 1em $shadow_dark_blue
+    &.animated
+      &:hover, &:focus
+        transform: scale(1.15) translate3d(0, -0.05em, 0)
+        box-shadow: 0 0.5em 1.5em $shadow_light_blue
+
+  &.blue
+    font-size: 0.9em
+    line-height: 1.111em
+    font-weight: 700
+  &.cyan
+    font-size: 0.9em
+    line-height: 1.111em
+    font-weight: 900
+  &.emerald
+    font-size: 0.9em
+    line-height: 1.111em
+    font-weight: 700
+  &.green
+    font-size: 0.9em
+    line-height: 1.111em
+    font-weight: 700
+  &.salmon
+    font-size: 0.9em
+    line-height: 1.111em
+    font-weight: 700
+  &.red
+    font-size: 0.9em
+    line-height: 1.111em
+    font-weight: 700
+  &.pink
+    font-size: 0.9em
+    line-height: 1.111em
+    font-weight: 700
+  &.grape
+    font-size: 0.9em
+    line-height: 1.111em
+    font-weight: 700
+  &.violet
+    font-size: 0.9em
+    line-height: 1.111em
+    font-weight: 700
+  &.yellow
+    font-size: 0.9em
+    line-height: 1.111em
+    font-weight: 700
+  &.orange
+    font-size: 0.9em
+    line-height: 1.111em
+    font-weight: 700
+  &.teal
+    font-size: 0.9em
+    line-height: 1.111em
+    font-weight: 700
+
+  &.first-gradient
+    font-size: 0.9em
+    line-height: 1.111em
+    font-weight: 700
+
+  &.imaged
+    padding: 0.5em 1em 0.5em 2.25em
+  &.block
+    display: block
+
+  &.blue
+    img, i
+      position: absolute
+      margin-left: -1.7em
+      margin-top: -0.20em
+  &.cyan
+    img, i
+      position: absolute
+      margin-left: -1.9em
+      margin-top: -0.15em
+  &.emerald
+    img, i
+      position: absolute
+      margin-left: -1.9em
+      margin-top: -0.15em
+  &.green
+    img, i
+      position: absolute
+      margin-left: -1.9em
+      margin-top: -0.15em
+  &.salmon
+    img, i
+      position: absolute
+      margin-left: -1.9em
+      margin-top: -0.15em
+  &.red
+    img, i
+      position: absolute
+      margin-left: -1.9em
+      margin-top: -0.15em
+  &.pink
+    img, i
+      position: absolute
+      margin-left: -1.9em
+      margin-top: -0.15em
+  &.grape
+    img, i
+      position: absolute
+      margin-left: -1.9em
+      margin-top: -0.15em
+  &.violet
+    img, i
+      position: absolute
+      margin-left: -1.9em
+      margin-top: -0.15em
+  &.yellow
+    img, i
+      position: absolute
+      margin-left: -1.9em
+      margin-top: -0.15em
+  &.orange
+    img, i
+      position: absolute
+      margin-left: -1.9em
+      margin-top: -0.15em
+  &.teal
+    img, i
+      position: absolute
+      margin-left: -1.9em
+      margin-top: -0.15em
+
+
+/** ANIMATIONS **/
+
+@-webkit-keyframes gradient
+  0%
+    background-position: 0% 50%
+  50%
+    background-position: 100% 50%
+  100%
+    background-position: 0% 50%
+
+@-moz-keyframes gradient
+  0%
+    background-position: 0% 50%
+  50%
+    background-position: 100% 50%
+  100%
+    background-position: 0% 50%
+
+@keyframes gradient
+  0%
+    background-position: 0% 50%
+  50%
+    background-position: 100% 50%
+  100%
+    background-position: 0% 50%
+
+button.btn
+  align-items: flex-start
+  border-style: none
+  box-sizing: border-box
+  border-width: 0
+  height: 2em
+  border-color: inherit
+  border-image: initial
