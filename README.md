@@ -43,3 +43,12 @@ A Buttons animated click for test <a href="https://malextrap.github.io/Buttons/s
 <button class="btn orange animated">Button</button>
 <button class="btn teal animated">Button</button>
 ```
+<br>
+
+
+![picture](https://i.imgur.com/1mIWzya.png)
+
+
+## Copyright ©
+#### Developed by clonalejandro
+         
