@@ -136,10 +136,11 @@
   &.first-gradient
     padding-left: 2.6em
     background: inherit
+    background-size: 250%
     background-image: linear-gradient(to right, $fgradients, $fgradiente)
     transition: all 0.4s ease
-    -webkit-animation: gradient 3s ease infinite
-    -moz-animation: gradient 3s ease infinite
+    -webkit-animation: fgradient 3s ease infinite
+    -moz-animation: fgradient 3s ease infinite
     animation: gradient 3s ease infinite
     box-shadow: 0 0.5em 1em $shadow_dark_blue
     &.animated
@@ -282,7 +283,7 @@
 
 /** ANIMATIONS **/
 
-@-webkit-keyframes gradient
+@-webkit-keyframes fgradient
   0%
     background-position: 0% 50%
   50%
@@ -290,7 +291,7 @@
   100%
     background-position: 0% 50%
 
-@-moz-keyframes gradient
+@-moz-keyframes fgradient
   0%
     background-position: 0% 50%
   50%
@@ -298,7 +299,7 @@
   100%
     background-position: 0% 50%
 
-@keyframes gradient
+@keyframes fgradient
   0%
     background-position: 0% 50%
   50%
